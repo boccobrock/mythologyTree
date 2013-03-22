@@ -62,8 +62,8 @@
             <div class="legend-type"><div class="legend-icon"></div>Mortal</div>
         </div>
         <script>
-            var width = window.innerWidth-100,
-            height = window.innerHeight-100;
+            var width = window.innerWidth-100;
+            var height = window.innerHeight-100;
 
             var color = d3.scale.category20();
 
@@ -80,6 +80,10 @@
             .attr("height", height);
 
             d3.json("pantheon.json", function(error, graph) {
+            for (var i=0; i < graph.nodes.length; i++) {
+                graph.nodes[i].x = Math.random()*width;
+                graph.nodes[i].y = Math.random()*height;
+            }
             force
             .nodes(graph.nodes)
             .links(graph.links)

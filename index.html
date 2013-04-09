@@ -14,7 +14,12 @@
                 stroke-opacity: .4;
             }
 
+            #header {
+                text-align: center;
+            }
+
             .legend {
+                height: 25px;
             }
 
             .legend-type {
@@ -43,8 +48,8 @@
         <script src="http://d3js.org/d3.v3.min.js"></script>
     </head>
     <body>
+        <div id="header">
         <h2>Greek Pantheon Map</h2>
-        <h3>Legend</h3>
         <div class="legend">Connections: 
             <div class="legend-type"><div class="legend-icon"></div>Parent/Child</div>
             <div class="legend-type"><div class="legend-icon"></div>Wife/Husband</div>
@@ -60,12 +65,15 @@
             <div class="legend-type"><div class="legend-icon"></div>Unknown</div>
             <div class="legend-type"><div class="legend-icon"></div>Semi-Divine</div>
             <div class="legend-type"><div class="legend-icon"></div>Mortal</div>
+            <div class="legend-type"><div class="legend-icon"></div>Sea Nymph</div>
+            <div class="legend-type"><div class="legend-icon"></div>Cyclops</div>
         </div>
+    </div>
         <script>
             var width = window.innerWidth-100;
             var height = window.innerHeight-100;
 
-            var color = ["#1f77b4","#ff7f0e","#d62728","#bcbd22","#ff7f0e","#6baed6","#d6616b","#31a354","#17becf","#9e9ac8","#e7ba52","#bdbdbd","#7f7f7f","#bcbd22","#17becf"];
+            var color = ["#1f77b4","#31a354","#d62728","#bcbd22","#ff7f0e","#6baed6","#d6616b","#31a354","#17becf","#9e9ac8","#e7ba52","#bdbdbd","#9467bd","#e377c2","#17becf"];
 
             d3.selectAll(".legend-icon").each(function(d, i){ d3.select(this).style("background", function(d) { return color[i]; } ) });
 

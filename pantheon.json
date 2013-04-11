@@ -55,7 +55,15 @@
     {"name":"Hestia","group":5},
     {"name":"Hades","group":5},
     {"name":"Thoosa","group":12},
-    {"name":"Polyphemus","group":13}
+    {"name":"Polyphemus","group":13},
+    {"name":"Chaos","group":3},
+    {"name":"Eros","group":3},
+    {"name":"Tartarus","group":3},
+    {"name":"Erebus","group":3},
+    {"name":"Nyx","group":3},
+    {"name":"Aether","group":3},
+    {"name":"Hemera","group":3},
+    {"name":"Typhon","group":3}
     ],
         "links":[
         {"source":0,"target":1,"value":2},
@@ -173,6 +181,15 @@
         {"source":53,"target":17,"value":0},
         {"source":54,"target":43,"value":2},
         {"source":54,"target":55,"value":0},
-        {"source":43,"target":55,"value":0}
+        {"source":43,"target":55,"value":0},
+        {"source":56,"target":59,"value":0},
+        {"source":56,"target":60,"value":0},
+        {"source":59,"target":61,"value":0},
+        {"source":59,"target":62,"value":0},
+        {"source":60,"target":61,"value":0},
+        {"source":60,"target":62,"value":0},
+        {"source":60,"target":59,"value":2},
+        {"source":63,"target":58,"value":0},
+        {"source":63,"target":26,"value":0}
     ]
 }

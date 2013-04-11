@@ -78,9 +78,10 @@
             d3.selectAll(".legend-icon").each(function(d, i){ d3.select(this).style("background", function(d) { return color[i]; } ) });
 
             var force = d3.layout.force()
-            .charge(-500)
+            .charge(-600)
             .linkDistance(function(d) {return (1+d.value)*80; })
             .linkStrength(0.2)
+            .gravity(0.2)
             .size([width, height]);
 
             var svg = d3.select("body").append("svg")

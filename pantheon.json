@@ -190,6 +190,7 @@
         {"source":60,"target":62,"value":0},
         {"source":60,"target":59,"value":2},
         {"source":63,"target":58,"value":0},
-        {"source":63,"target":26,"value":0}
+        {"source":63,"target":26,"value":0},
+        {"source":58,"target":26,"value":2}
     ]
 }
